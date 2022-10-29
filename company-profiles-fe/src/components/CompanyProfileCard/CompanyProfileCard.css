@@ -35,7 +35,8 @@
     margin: 0 0;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;   
-    border-top: 2 px solid black;
+    border-top: 2px solid black;
+    text-align: justify;
 }
 
 .card-half-width{

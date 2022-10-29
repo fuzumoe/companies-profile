@@ -7,7 +7,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/671585/pexels-photo-671585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       country: "USA",
       city: "New York",
-      specialities: ["Electrical"],
+      specialities: ["electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -19,7 +19,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/586019/pexels-photo-586019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Huston",
       country: "USA",
-      specialities: ["Electrical", "Plumbing"],
+      specialities: ["electrical", "plumbing"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -30,7 +30,7 @@ const data = () => {
       name: "Chetan Ltd.",
       logo: "https://images.pexels.com/photos/2892618/pexels-photo-2892618.jpeg?auto=compress&cs=tinysrgb&w=1600",
       city: "Miami",
-      specialities: ["Excavation"],
+      specialities: ["excavation"],
       country: "USA",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -43,7 +43,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/459728/pexels-photo-459728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "London",
       country: "UK",
-      specialities: ["Excavation", "Plumbing", "Electrical"],
+      specialities: ["excavation", "plumbing", "electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -55,7 +55,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/5313208/pexels-photo-5313208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Bristol",
       country: "UK",
-      specialities: ["Excavation", "Plumbing"],
+      specialities: ["excavation", "plumbing"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -66,7 +66,7 @@ const data = () => {
       name: "Bucket Wheel Inc.",
       logo: "https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Hanover",
-      specialities: ["Excavation", "Electrical"],
+      specialities: ["excavation", "electrical"],
       country: "Germany",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -78,7 +78,7 @@ const data = () => {
       name: "Distro Ltd.",
       logo: "https://images.pexels.com/photos/5611713/pexels-photo-5611713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Millan",
-      specialities: ["Electrical"],
+      specialities: ["electrical"],
       country: "Italy",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -90,7 +90,7 @@ const data = () => {
       name: "Cropo Co.",
       logo: "https://images.pexels.com/photos/5973840/pexels-photo-5973840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Paris",
-      specialities: ["Plumbing", "Electrical"],
+      specialities: ["plumbing", "electrical"],
       country: "France",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -102,7 +102,7 @@ const data = () => {
       name: "Steel ground Inc.",
       logo: "https://images.pexels.com/photos/7937299/pexels-photo-7937299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Sydney",
-      specialities: ["Plumbing"],
+      specialities: ["plumbing"],
       country: "Australia",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -115,7 +115,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/188679/pexels-photo-188679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Rome",
       country: "Italy",
-      specialities: ["Excavation"],
+      specialities: ["excavation"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -127,7 +127,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Copenhagen",
       country: "Denmark",
-      specialities: ["Excavation", "Plumbing", "Electrical"],
+      specialities: ["excavation", "plumbing", "electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -139,7 +139,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/1292464/pexels-photo-1292464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Leon",
       country: "France",
-      specialities: ["Excavation", "Plumbing", "Electrical"],
+      specialities: ["excavation", "plumbing", "electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -151,7 +151,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/2569839/pexels-photo-2569839.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "New Delhi",
       country: "India",
-      specialities: ["Excavation", "Electrical"],
+      specialities: ["excavation", "electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -162,7 +162,7 @@ const data = () => {
       name: "Prona Co.",
       logo: "https://images.pexels.com/photos/4883682/pexels-photo-4883682.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Madrid",
-      specialities: ["Excavation", "Plumbing"],
+      specialities: ["excavation", "plumbing"],
       country: "Spain",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -174,7 +174,7 @@ const data = () => {
       name: "Skitten Inc.",
       logo: "https://images.pexels.com/photos/633860/machine-mill-industry-steam-633860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Moscow",
-      specialities: ["Plumbing", "Electrical"],
+      specialities: ["plumbing", "electrical"],
       country: "Russia",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -187,7 +187,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/532192/pexels-photo-532192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Berlin",
       country: "Germany",
-      specialities: ["Electrical"],
+      specialities: ["electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -198,7 +198,7 @@ const data = () => {
       name: "Chevron Co.",
       logo: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "New Mexico",
-      specialities: ["Plumbing"],
+      specialities: ["plumbing"],
       country: "Mexico",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
@@ -211,7 +211,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/6109677/pexels-photo-6109677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Tokyo",
       country: "Japan",
-      specialities: ["Excavation"],
+      specialities: ["excavation"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -223,7 +223,7 @@ const data = () => {
       logo: "https://images.pexels.com/photos/3784335/pexels-photo-3784335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "New Jerssey",
       ountry: "USA",
-      specialities: ["Excavation", "Plumbing", "Electrical"],
+      specialities: ["excavation", "plumbing", "electrical"],
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
       sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -234,7 +234,7 @@ const data = () => {
       name: "Golden Cave Inc.",
       logo: "https://images.pexels.com/photos/3785927/pexels-photo-3785927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       city: "Toronto",
-      specialities: ["Excavation", "Plumbing", "Electrical"],
+      specialities: ["excavation", "plumbing", "electrical"],
       country: "Canada",
       description: `
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing

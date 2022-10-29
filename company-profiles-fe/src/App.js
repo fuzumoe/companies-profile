@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CompanyProfileCard from "./components/CompanyProfileCard/CompanyProfileCard";
 import SearchBar from "./components/SearchBar/SearchBar";
 import data from "./data/companies";
@@ -8,31 +8,32 @@ const specialitiesData = [
   {
     index: 1,
     label: "PlUMBING",
-    value: "Plumbing",
+    value: "plumbing",
     active: false,
   },
   {
     index: 2,
     label: "ELECTRICAL",
-    value: "Electrical",
+    value: "electrical",
     active: false,
   },
   {
     index: 3,
     label: "EXCAVATION",
-    value: "Excavation",
+    value: "excavation",
     active: false,
   },
 ];
 const App = () => {
-  const [companiesProfile, setCompaniesProfile] = useState(data);
+  const [companiesProfiles, setCompaniesProfiles] = useState(data);
   const [specialities, setSpecialities] = useState(specialitiesData);
-  const [companyName, setCompanyName] = useState("")
-  const placeholder = "Search company profile by name..."
+  const [companyName, setCompanyName] = useState("");
+  const placeholder = "Search company profile by name...";
 
-  const searchOnChangHandler = (value) => { 
-    setCompanyName(value)
-  }
+  const searchOnChangHandler = (value) => {
+    setCompanyName(value);
+  };
+
   const toggleButtonGroupHandler = (value) => {
     const newState = specialities.map((specility) => {
       if (specility.index === value)
@@ -43,8 +44,38 @@ const App = () => {
     setSpecialities(newState);
   };
 
+  useEffect(() => {
+    const filteredSpecialities = specialities
+      .filter((data) => {
+        if (data.active) return data.value;
+      })
+      .map((data) => {
+        return data.value.toLocaleLowerCase();
+      });
+
+    const newCompanyProfilesState = companiesProfiles.filter((profile) => {
+      
+      const sps = profile.specialities 
+      if(
+        filteredSpecialities.some((sp) => {return sps.includes(sp);}) ||
+        profile.name.toLocaleLowerCase().includes(companyName.toLocaleLowerCase())
+      )
+      return profile;
+       
+      
+     
+    });
+    console.log(newCompanyProfilesState)
+    setCompaniesProfiles(newCompanyProfilesState);
+    if (newCompanyProfilesState.length > 0) {
+      setCompaniesProfiles(newCompanyProfilesState);
+    } else {
+      setCompaniesProfiles(data);
+    }
+  }, [specialities, companyName]);
+
   return (
-    <React.Fragment>
+    <div className="wrapper">
       <SearchBar
         toggleBtnGroupHandler={toggleButtonGroupHandler}
         searchOnChangHandler={searchOnChangHandler}
@@ -52,19 +83,17 @@ const App = () => {
         companyName={companyName}
         placeholder={placeholder}
       ></SearchBar>
-      <React.Fragment>
-        <div className="container">
-          {companiesProfile.map((profile) => {
-            return (
-              <CompanyProfileCard
-                key={profile.id}
-                profile={profile}
-              ></CompanyProfileCard>
-            );
-          })}
-        </div>
-      </React.Fragment>
-    </React.Fragment>
+      <div className="container">
+        {companiesProfiles.map((profile) => {
+          return (
+            <CompanyProfileCard
+              key={profile.id}
+              profile={profile}
+            ></CompanyProfileCard>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 

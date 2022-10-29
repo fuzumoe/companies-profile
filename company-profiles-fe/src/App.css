@@ -13,8 +13,16 @@ body {
 }
 
 
-.container {
+.wrapper{
   display: flex; 
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+
+  
+}
+.container{
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
 }
