@@ -1,0 +1,39 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+
+input[type="text"]{
+    background: transparent; 
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input[type="text"]:focus, input[type="text"]:hover, input[type="text"]:not(:placeholder-shown){
+    background: white; 
+    color: black;
+    border: 2px inset black;
+}
