@@ -1,10 +1,12 @@
 const express = require("express");
 
 const router = express.Router();
-var _ = require("lodash");
+
 const companiesProfiles = require("../data/companies.json");
 
-router.get("/", (req, res, next) => {
+router.get("/profiles.json", (req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin','*');
+
   let resData = companiesProfiles.data;
   let companyName = req.query.name;
   let specialities = req.query.specialities;
@@ -18,13 +20,13 @@ router.get("/", (req, res, next) => {
 
   if (specialities) {
     specialities = specialities.split(",");
-    resData = resData.filter((data) => { 
-      console.log(_.some(data.specialities, specialities));
+    resData = resData.filter((data) => {  
       if (specialities.some((sp) => {return data.specialities.includes(sp)  }))
         return data;
  
     });
   }
+
 
   res.json(resData);
 });

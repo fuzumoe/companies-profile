@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from "react";
 import CompanyProfileCard from "./components/CompanyProfileCard/CompanyProfileCard";
 import SearchBar from "./components/SearchBar/SearchBar";
-import data from "./data/companies";
+
 import specialitiesData from "./data/specialities";
 import "./App.css";
- 
-const intialData = data()
-const intialSpecialites = specialitiesData().map(speciality => { return speciality.value})
+
+const specialitesList = specialitiesData();
+const intialSpecialites = specialitesList.map((speciality) => {
+  return speciality.value;
+});
 
 const App = () => {
-  const [companiesProfiles, setCompaniesProfiles] = useState(intialData);
+  const [loading, setLoading] = useState(true);
+  const [companiesProfiles, setCompaniesProfiles] = useState();
   const [companyName, setCompanyName] = useState("");
-  const [specialities, setSpecialities] = useState(intialSpecialites)
-  const placeholder = "Search company profile by name...";
+  const [specialities, setSpecialities] = useState(intialSpecialites);
+  const placeholder = " profile by name...";
 
   const searchOnChangHandler = (value) => {
     setCompanyName(value);
@@ -22,38 +25,64 @@ const App = () => {
     setSpecialities(specialities);
   };
 
-  useEffect(() => {  
-    let profilesData = data()
-    profilesData = profilesData.filter((profile) => {
-      if(  profile.name.toLocaleLowerCase().includes(companyName.toLocaleLowerCase()))
-      return profile;
-    }).filter((profile) => {
-      if(specialities.some((sp) => {return profile.specialities.includes(sp)}))
-      return profile; 
-      
-    }); 
-  setCompaniesProfiles(profilesData);
+  const getFerchUrl = () => {
+    let url = "http://localhost:5050/profiles.json/";
+    if (companyName.length > 0 && specialities.length > 0)
+      url = `${url}?name=${companyName}&specialities=${specialities.join(",")}`;
+    if (companyName.length > 0 && specialities.length < 0)
+      url = `${url}?name=${companyName}`;
+    if (companyName.length < 0 && specialities.length > 0)
+      url = `${url}?pecialities=${specialities.join(",")}`;
+    return url;
+  };
+
+  const fetchData = async (url) => {
+    setLoading(true);
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+    let response = await fetch(url, requestOptions);
+    let profiles = await response.json();
+    setCompaniesProfiles(profiles);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchData(getFerchUrl());
   }, [specialities, companyName]);
+
+  useEffect(() => {
+    fetchData(getFerchUrl());
+  }, []);
 
   return (
     <div className="wrapper">
       <SearchBar
         setSelectedSpecilities={setSelectedSpecilities}
         searchOnChangHandler={searchOnChangHandler}
-        specialities={specialities}
+        specialitesList={specialitesList}
+        specialities={intialSpecialites}
         companyName={companyName}
         placeholder={placeholder}
       ></SearchBar>
-      <div className="container">
-        {companiesProfiles.map((profile) => {
-          return (
-            <CompanyProfileCard
-              key={profile.id}
-              profile={profile}
-            ></CompanyProfileCard>
-          );
-        })}
-      </div>
+      {loading && (
+        <div className="container">
+          <h1>....LOADING....</h1>
+        </div>
+      )}
+      {!loading && (
+        <div className="container">
+          {companiesProfiles.map((profile) => {
+            return (
+              <CompanyProfileCard
+                key={profile.id}
+                profile={profile}
+              ></CompanyProfileCard>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

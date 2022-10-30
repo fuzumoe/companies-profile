@@ -1,4 +1,3 @@
-
 const data = () => {
   return [
     {
@@ -8,10 +7,7 @@ const data = () => {
       country: "USA",
       city: "New York",
       specialities: ["electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 2,
@@ -20,10 +16,7 @@ const data = () => {
       city: "Huston",
       country: "USA",
       specialities: ["electrical", "plumbing"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 3,
@@ -32,10 +25,7 @@ const data = () => {
       city: "Miami",
       specialities: ["excavation"],
       country: "USA",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 4,
@@ -44,10 +34,7 @@ const data = () => {
       city: "London",
       country: "UK",
       specialities: ["excavation", "plumbing", "electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 5,
@@ -56,10 +43,7 @@ const data = () => {
       city: "Bristol",
       country: "UK",
       specialities: ["excavation", "plumbing"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 6,
@@ -68,10 +52,7 @@ const data = () => {
       city: "Hanover",
       specialities: ["excavation", "electrical"],
       country: "Germany",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 7,
@@ -80,10 +61,7 @@ const data = () => {
       city: "Millan",
       specialities: ["electrical"],
       country: "Italy",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 8,
@@ -92,10 +70,7 @@ const data = () => {
       city: "Paris",
       specialities: ["plumbing", "electrical"],
       country: "France",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 9,
@@ -104,10 +79,7 @@ const data = () => {
       city: "Sydney",
       specialities: ["plumbing"],
       country: "Australia",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 10,
@@ -116,10 +88,7 @@ const data = () => {
       city: "Rome",
       country: "Italy",
       specialities: ["excavation"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 11,
@@ -128,10 +97,7 @@ const data = () => {
       city: "Copenhagen",
       country: "Denmark",
       specialities: ["excavation", "plumbing", "electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 12,
@@ -140,10 +106,7 @@ const data = () => {
       city: "Leon",
       country: "France",
       specialities: ["excavation", "plumbing", "electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 13,
@@ -152,10 +115,7 @@ const data = () => {
       city: "New Delhi",
       country: "India",
       specialities: ["excavation", "electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 14,
@@ -164,10 +124,7 @@ const data = () => {
       city: "Madrid",
       specialities: ["excavation", "plumbing"],
       country: "Spain",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 15,
@@ -176,10 +133,7 @@ const data = () => {
       city: "Moscow",
       specialities: ["plumbing", "electrical"],
       country: "Russia",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 16,
@@ -188,10 +142,7 @@ const data = () => {
       city: "Berlin",
       country: "Germany",
       specialities: ["electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 17,
@@ -200,10 +151,7 @@ const data = () => {
       city: "New Mexico",
       specialities: ["plumbing"],
       country: "Mexico",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 18,
@@ -212,10 +160,7 @@ const data = () => {
       city: "Tokyo",
       country: "Japan",
       specialities: ["excavation"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 19,
@@ -224,10 +169,7 @@ const data = () => {
       city: "New Jerssey",
       ountry: "USA",
       specialities: ["excavation", "plumbing", "electrical"],
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
     {
       id: 20,
@@ -236,10 +178,7 @@ const data = () => {
       city: "Toronto",
       specialities: ["excavation", "plumbing", "electrical"],
       country: "Canada",
-      description: `
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscing
-      sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-      sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
+      description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sadipscingsed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.`,
     },
   ];
 };
