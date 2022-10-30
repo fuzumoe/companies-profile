@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import ButtonGroup from '../ButtonGroup/ButtonGroup'
+import SearchButtonGroup from '../SearchButtonGroup/SearchButtonGroup'
 import SearchInput from '../SearchInput/SearchInput'
 import './SearchBar.css'
 
@@ -32,10 +32,10 @@ const SearchBar = (props) => {
       <ul className="list">
             
       <li className="items">
-        <SearchInput value={props.companyName} placeholder={props.placeholder} searchOnChangHandler={props.searchOnChangHandler}></SearchInput>
+        <SearchInput value={props.companyName} placeholder={props.placeholder} searchOnChangHandler={props.searchOnChangHandler} />
       </li>
       <li className="items">
-        <ButtonGroup toggleBtnGroupHandler={props.toggleBtnGroupHandler}  buttons={props.specialities}></ButtonGroup>
+        <SearchButtonGroup setSelectedSpecilities={props.setSelectedSpecilities}  />
     
       </li>
     </ul>

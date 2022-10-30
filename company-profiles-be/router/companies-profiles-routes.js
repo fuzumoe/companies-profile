@@ -9,14 +9,14 @@ router.get("/", (req, res, next) => {
   let companyName = req.query.name;
   let specialities = req.query.specialities;
 
-  if (companyName && companyName != "") {
+  if (companyName) {
     resData = resData.filter((data) => {
       if (data.name.toLowerCase().includes(companyName.toLocaleLowerCase()))
         return data;
     });
   }
 
-  if (specialities && specialities != "") {
+  if (specialities) {
     specialities = specialities.split(",");
     resData = resData.filter((data) => { 
       console.log(_.some(data.specialities, specialities));
