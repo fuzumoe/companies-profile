@@ -15,6 +15,12 @@ following information:
 ## Assumptions
 It is assumed as for running the application you are using Linux OS
 ***
+## Pre Conditions
+The CORS behavior, commonly termed as CORS error, is a mechanism to restrict users from accessing shared resources. This is not an error but a security measure to secure users or the website which you are accessing from a potential security bleach.
+To avoid such eror when running the application either disable
+the browser security or use browser extentions that block CORS error such us [CORS Unblock](https://add0n.com/access-control.html)
+
+***
 ## Running application through docker
 - add new virtual host entries to system hosts file  
  **N.B.**   
@@ -60,9 +66,9 @@ $  docker-compose run app npm test  -- --watchAll=false
 ```
 - n new terminal/cmd console run api test
 ```bash
-$  cd api npm run test  -- --watchAll=false
+$  cd api && npm run test  -- --watchAll=false
 ```
 - n new terminal/cmd consolerun app test
 ```bash
-$   cd app  npm test  -- --watchAll=false
+$   cd app &&  npm test  -- --watchAll=false
 ```
