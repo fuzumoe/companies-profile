@@ -26,7 +26,9 @@ const App = () => {
   };
 
   const getFerchUrl = () => {
-    let url = "http://localhost:5050/profiles.json/";
+    let url = process.env.REACT_APP_API_URL || "http://localhost:5050/profiles.json/";
+    console.log(url)
+    // let url = 
     if (companyName.length > 0 && specialities.length > 0)
       url = `${url}?name=${companyName}&specialities=${specialities.join(",")}`;
     if (companyName.length > 0 && specialities.length < 0)
@@ -50,10 +52,12 @@ const App = () => {
 
   useEffect(() => {
     fetchData(getFerchUrl());
+    // eslint-disable-next-line 
   }, [specialities, companyName]);
 
   useEffect(() => {
     fetchData(getFerchUrl());
+    // eslint-disable-next-line 
   }, []);
 
   return (

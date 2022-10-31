@@ -17,6 +17,7 @@ const SearchButtonGroup = (props) => {
 
   useEffect(() => {
     const selectedSpecialities = buttons
+     // eslint-disable-next-line 
       .filter((button) => {
         if (button.active === true) return button;
       })
@@ -29,6 +30,7 @@ const SearchButtonGroup = (props) => {
     } else {
       props.setSelectedSpecilities(selectedSpecialities);
     }
+    // eslint-disable-next-line 
   }, [buttons]);
 
   return (

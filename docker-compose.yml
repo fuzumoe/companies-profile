@@ -1,0 +1,45 @@
+version: '3.8'
+
+
+services:
+  api:
+    image: api
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    container_name: api
+    working_dir: /app
+    command:  npm start
+    volumes:
+      - ./api:/app/
+    ports:
+      - 5050:5050
+
+  app:
+    image: app
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+    container_name: app
+    working_dir: /app
+    command:  npm start 
+    
+    volumes:
+      - ./app/:/app/
+    ports:
+      - 3000:3000
+    depends_on:
+      -  api
+
+  nginx:
+    image: nginx:1.13
+    container_name: nginx
+    volumes:
+      - ./nginx/api.conf:/etc/nginx/conf.d/api.conf
+      - ./nginx/app.conf:/etc/nginx/conf.d/app.conf
+    depends_on:
+      - api
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
