@@ -18,7 +18,7 @@ It is assumed as for running the application you are using Linux OS
 ## Running application through docker
 - add new virtual host entries to system hosts file  
  **N.B.**   
-  --- for windows and MacOs use manual insertions but for linux use the commands below
+for windows and MacOs use manual insertions but for linux use the commands below
 ```bash
  sudo -- sh -c "echo 127.0.0.1 app.localhost >> /etc/hosts" 
  sudo -- sh -c "echo 127.0.0.1 api.localhost >> /etc/hosts"
