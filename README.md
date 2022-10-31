@@ -1,4 +1,4 @@
-# companies-profile
+# Companies Profile
 Cosuno coding challenge
 Create a simple React application that shows a list of construction companies, each with the
 following information:
