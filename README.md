@@ -58,4 +58,11 @@ $  docker-compose run app npm test  -- --watchAll=false
 ```bash
  cd app && npm start
 ```
-
+- n new terminal/cmd console run api test
+```bash
+$  cd api npm run test  -- --watchAll=false
+```
+- n new terminal/cmd consolerun app test
+```bash
+$   cd app  npm test  -- --watchAll=false
+```
